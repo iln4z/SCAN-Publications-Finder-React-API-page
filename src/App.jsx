@@ -13,7 +13,7 @@ function App() {
   return (
     <AuthProvider>
       <SearchProvider>
-        <Router basename="/SCAN-Publications-Finder-React-REST-API">
+        <Router basename="/SCAN-Publications-Finder-React-API-page">
           <Routes>
             <Route path="/" element={<Layout><HomePage /></Layout>} />
             <Route path="/search" element={<Layout><SearchPage /></Layout>} />
