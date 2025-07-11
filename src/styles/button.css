@@ -1,0 +1,49 @@
+.btn {
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn.primary {
+  background-color: var(--accent3);
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #3a5bff;
+}
+
+.btn.secondary {
+  background-color: var(--accent1);
+  color: black;
+}
+
+.btn.secondary:hover {
+  background-color: #ffa726;
+}
+
+.btn.outline {
+  background-color: transparent;
+  border: 1px solid var(--accent3);
+  color: var(--accent3);
+}
+
+.btn.outline:hover {
+  background-color: var(--accent3);
+  color: white;
+}
+
+.btn.full-width {
+  width: 100%;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

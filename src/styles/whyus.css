@@ -1,0 +1,96 @@
+.whyus-section {
+  padding: 109px 0;
+}
+
+.section-title {
+  display: flex;
+  font-size: 54px;
+  line-height: 1;
+  margin-bottom: 70px;
+  color: black;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.whyus-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.carousel-arrow {
+  background: var(--white);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.carousel-arrow:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.carousel-card h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+  font-weight: 400;
+}
+
+.carousel-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.hero-after {
+  margin: 70px 0 0 0;
+  max-width: 1440px;
+  width: 100%;
+}
+.carousel-cards {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel-card {
+  scroll-snap-align: start;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .carousel-cards {
+    grid-auto-columns: calc(33.333% - 14px);
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: visible;
+  }
+}
+@media (max-width: 768px) {
+  .hero-after {
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
+  }
+
+  .image-hero {
+    width: 100%;
+    height: auto;
+  }
+}

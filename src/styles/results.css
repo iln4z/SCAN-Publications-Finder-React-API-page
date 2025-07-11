@@ -1,0 +1,274 @@
+.results-container {
+  padding: 40px 0;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.header-text {
+  flex: 1;
+  max-width: 60%;
+}
+
+.results-header h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-family: "Ferry", sans-serif;
+  color: #000;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.results-header p {
+  font-size: 20px;
+  color: #666;
+  max-width: 80%;
+}
+
+.header-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.result-header-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.summary-section {
+  margin-bottom: 60px;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.summary-header h2 {
+  font-size: 30px;
+  font-family: "Ferry", sans-serif;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.found-count {
+  font-size: 18px;
+  color: #949494;
+}
+
+.histogram-container {
+  position: relative;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.carousel-arrow {
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 20px;
+  color: #949494;
+  transition: all 0.3s;
+}
+
+.carousel-arrow:hover:not(:disabled) {
+  background: #029491;
+  color: white;
+}
+
+.carousel-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.histogram-table-container {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.histogram-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+
+.histogram-table th,
+.histogram-table td {
+  padding: 15px 10px;
+  text-align: center;
+  font-size: 18px;
+  border-right: 2px solid #029491;
+}
+
+.histogram-table th:last-child,
+.histogram-table td:last-child {
+  border-right: none;
+}
+
+.histogram-table th {
+  font-weight: 500;
+  color: #000;
+
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.histogram-table tr:first-child th:first-child {
+  color: #ffffff;
+  background: #029491;
+  font-weight: 700;
+}
+
+.histogram-table tr td:first-child {
+  text-align: left;
+  font-weight: 700;
+  color: #000;
+  background: #029491;
+  color: white;
+}
+
+.documents-section {
+  position: relative;
+  z-index: 2;
+}
+
+.documents-section h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: "Ferry", sans-serif;
+  color: #000;
+  font-weight: 900;
+}
+
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.document-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  height: 894px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eaeaea;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 40px auto 0;
+  padding: 15px 40px;
+  background: #5970ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+  grid-column: span 2;
+  max-width: 335px;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+.load-more-btn:hover {
+  background: #3a5bff;
+}
+
+@media (max-width: 1024px) {
+  .results-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-text {
+    max-width: 100%;
+  }
+
+  .results-header h1 {
+    font-size: 32px;
+  }
+
+  .results-header p {
+    max-width: 100%;
+    font-size: 18px;
+  }
+
+  .header-image-container {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .documents-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .load-more-btn {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .summary-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .found-count {
+    margin-top: 10px;
+  }
+
+  .results-header h1 {
+    font-size: 28px;
+  }
+
+  .summary-header h2,
+  .documents-section h2 {
+    font-size: 26px;
+  }
+
+  .document-card {
+    height: auto;
+    min-height: 600px;
+  }
+}
