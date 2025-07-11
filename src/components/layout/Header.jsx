@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import Loader from '../ui/Loader';
 import '../../styles/header.css';
+import logo from '../../images/HomePage/logo_head.png';
+import avatar from '../../images/HomePage/ava.png';
 
 const Header = () => {
   const { user, accountInfo, loading, logout } = useAuth();
@@ -24,7 +26,7 @@ const Header = () => {
         <div className="header-top">
           <div className="logo">
             <img
-              src="/SCAN-Publications-Finder-React-API-page/images/HomePage/logo_head.png"
+              src={logo}
               alt="СКАН логотип"
               width={isMobile ? 111 : 140}
               height={isMobile ? 55 : 80}
@@ -37,7 +39,7 @@ const Header = () => {
                 {accountInfo && !loading ? (
                   <>
                     <div className="account-row">
-                      <span >Использовано компаний </span>
+                      <span>Использовано компаний </span>
                       <span className="count">{accountInfo.usedCompanyCount}</span>
                     </div>
                     <div className="account-row">
@@ -68,14 +70,14 @@ const Header = () => {
         </div>
 
         <nav className={`nav ${mobileMenuOpen ? 'open' : ''}`}>
-          <a href="/" className="nav-link">Главная</a>
-          <a href="/tariffs" className="nav-link">Тарифы</a>
-          <a href="/faq" className="nav-link">FAQ</a>
+          <a href="" className="nav-link">Главная</a>
+          <a href="tariffs" className="nav-link">Тарифы</a>
+          <a href="faq" className="nav-link">FAQ</a>
 
           {isMobile && !user && (
             <div className="mobile-auth-buttons">
-              <a href="/register" className="register-btn">Зарегистрироваться</a>
-              <a href="/login" className="login-btn">Войти</a>
+              <a href="register" className="register-btn">Зарегистрироваться</a>
+              <a href="login" className="login-btn">Войти</a>
             </div>
           )}
         </nav>
@@ -102,19 +104,20 @@ const Header = () => {
                     <div className="username">Алексей А.</div>
                     <button onClick={logout} className="logout-btn">Выйти</button>
                   </div>
-                  <div className="avatar-initials"> <img
-                    src="/images/HomePage/ava.png"
-                    alt="СКАН логотип"
-                    width={33}
-                    height={33}
-                  /></div>
-
+                  <div className="avatar-initials">
+                    <img
+                      src={avatar}
+                      alt="Аватар пользователя"
+                      width={33}
+                      height={33}
+                    />
+                  </div>
                 </div>
               </div>
             ) : (
               <div className="auth-buttons">
-                <a href="/register" className="register-btn">Зарегистрироваться</a>
-                <a href="/login" className="login-btn">Войти</a>
+                <a href="register" className="register-btn">Зарегистрироваться</a>
+                <a href="login" className="login-btn">Войти</a>
               </div>
             )}
           </>
