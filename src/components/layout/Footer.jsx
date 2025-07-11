@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container footer-container">
         <div className="footer-left">
           <div className="footer-logo"><img
-            src="/images/HomePage/logo_foot.png"
+            src="/SCAN-Publications-Finder-React-API-page/images/HomePage/logo_foot.png"
             alt="СКАН логотип"
             width={141}
             height={141}

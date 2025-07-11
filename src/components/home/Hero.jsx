@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
         <div className="hero-image">
           <img className='image-hero'
-            src="/images/HomePage/hero1.png"
+            src="/SCAN-Publications-Finder-React-API-page/images/HomePage/hero1.png"
             alt="СКАН логотип"
             width={629}
             height={593}

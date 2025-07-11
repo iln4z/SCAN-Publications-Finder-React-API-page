@@ -8,27 +8,27 @@ const WhyUs = () => {
   const cards = [
     {
       title: 'Высокая и оперативная скорость обработки заявки',
-      image: '/images/HomePage/carousel1.png'
+      image: '/SCAN-Publications-Finder-React-API-page/images/HomePage/carousel1.png'
     },
     {
       title: 'Огромная комплексная база данных, обеспечивающая объективный ответ на запрос',
-      image: '/images/HomePage/carousel2.png'
+      image: '/SCAN-Publications-Finder-React-API-page/images/HomePage/carousel2.png'
     },
     {
       title: 'Защита конфеденциальных сведений, не подлежащих разглашению по федеральному законодательству',
-      image: '/images/HomePage/carousel3.png'
+      image: '/SCAN-Publications-Finder-React-API-page/images/HomePage/carousel3.png'
     },
     {
       title: 'Высокая и оперативная скорость обработки заявки',
-      image: '/images/HomePage/carousel1.png'
+      image: '/SCAN-Publications-Finder-React-API-page/images/HomePage/carousel1.png'
     },
     {
       title: 'Огромная комплексная база данных, обеспечивающая объективный ответ на запрос',
-      image: '/images/HomePage/carousel2.png'
+      image: '/SCAN-Publications-Finder-React-API-page/images/HomePage/carousel2.png'
     },
     {
       title: 'Защита конфеденциальных сведений, не подлежащих разглашению по федеральному законодательству',
-      image: '/images/HomePage/carousel3.png'
+      image: '/SCAN-Publications-Finder-React-API-page/images/HomePage/carousel3.png'
     }
   ];
   const visibleCards = [];
