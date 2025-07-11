@@ -15,11 +15,11 @@ function App() {
       <SearchProvider>
         <Router basename="/SCAN-Publications-Finder-React-API-page">
           <Routes>
-            <Route path="/" element={<Layout><HomePage /></Layout>} />
-            <Route path="/search" element={<Layout><SearchPage /></Layout>} />
-            <Route path="/results" element={<Layout><ResultsPage /></Layout>} />
-            <Route path="/login" element={<SimpleLayout><LoginPage /></SimpleLayout>} />
-            <Route path="*" element={<Navigate to="/" />} />
+            <Route path="" element={<Layout><HomePage /></Layout>} />
+            <Route path="search" element={<Layout><SearchPage /></Layout>} />
+            <Route path="results" element={<Layout><ResultsPage /></Layout>} />
+            <Route path="login" element={<SimpleLayout><LoginPage /></SimpleLayout>} />
+            <Route path="*" element={<Navigate to="" />} />
           </Routes>
         </Router>
       </SearchProvider>

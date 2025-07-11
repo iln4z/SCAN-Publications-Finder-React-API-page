@@ -24,7 +24,7 @@ const Header = () => {
         <div className="header-top">
           <div className="logo">
             <img
-              src="/SCAN-Publications-Finder-React-API-page/images/HomePage/logo.png"
+              src="/SCAN-Publications-Finder-React-API-page/images/HomePage/logo_head.png"
               alt="СКАН логотип"
               width={isMobile ? 111 : 140}
               height={isMobile ? 55 : 80}

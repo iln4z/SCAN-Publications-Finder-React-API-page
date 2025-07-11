@@ -75,7 +75,7 @@ const WhyUs = () => {
           </button>
         </div>
         <img className='hero-after'
-          src="/images/HomePage/hero2.png"
+          src="/SCAN-Publications-Finder-React-API-page/images/HomePage/hero2.png"
           alt="СКАН логотип"
           width={1307}
           height={575}
