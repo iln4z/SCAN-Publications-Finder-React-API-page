@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/SCAN-Publications-Finder-React-API-page/static/css/main.860eaf45.css",
-    "main.js": "/SCAN-Publications-Finder-React-API-page/static/js/main.f623a61d.js",
+    "main.js": "/SCAN-Publications-Finder-React-API-page/static/js/main.d6e2b493.js",
     "static/js/453.a402e2aa.chunk.js": "/SCAN-Publications-Finder-React-API-page/static/js/453.a402e2aa.chunk.js",
     "index.html": "/SCAN-Publications-Finder-React-API-page/index.html",
     "main.860eaf45.css.map": "/SCAN-Publications-Finder-React-API-page/static/css/main.860eaf45.css.map",
-    "main.f623a61d.js.map": "/SCAN-Publications-Finder-React-API-page/static/js/main.f623a61d.js.map",
+    "main.d6e2b493.js.map": "/SCAN-Publications-Finder-React-API-page/static/js/main.d6e2b493.js.map",
     "453.a402e2aa.chunk.js.map": "/SCAN-Publications-Finder-React-API-page/static/js/453.a402e2aa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.860eaf45.css",
-    "static/js/main.f623a61d.js"
+    "static/js/main.d6e2b493.js"
   ]
 }
