@@ -15,14 +15,14 @@ function App() {
     <AuthProvider>
       <SearchProvider>
         <Router basename={process.env.PUBLIC_URL}>
-          <Routes>
-            <Route index element={<Layout><HomePage /></Layout>} />
-            <Route path="search" element={<Layout><SearchPage /></Layout>} />
-            <Route path="results" element={<Layout><ResultsPage /></Layout>} />
-            <Route path="login" element={<SimpleLayout><LoginPage /></SimpleLayout>} />
-            <Route path="*" element={<Navigate to="/SCAN-Publications-Finder-React-API-page" replace />} />
-          </Routes>
-        </Router>
+  <Routes>
+    <Route path="/" element={<Layout><HomePage /></Layout>} />
+    <Route path="/search" element={<Layout><SearchPage /></Layout>} />
+    <Route path="/results" element={<Layout><ResultsPage /></Layout>} />
+    <Route path="/login" element={<SimpleLayout><LoginPage /></SimpleLayout>} />
+    <Route path="*" element={<Navigate to="/" replace />} />
+  </Routes>
+</Router>
       </SearchProvider>
     </AuthProvider>
   );
