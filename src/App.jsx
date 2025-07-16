@@ -14,7 +14,7 @@ function App() {
   return (
     <AuthProvider>
       <SearchProvider>
-        <Router basename="/SCAN-Publications-Finder-React-API-page">
+        <Router basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route index element={<Layout><HomePage /></Layout>} />
             <Route path="search" element={<Layout><SearchPage /></Layout>} />
