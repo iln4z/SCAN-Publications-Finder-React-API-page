@@ -10,12 +10,13 @@ import ResultsPage from './pages/ResultsPage';
 import { SearchProvider } from './context/SearchContext';
 
 function App() {
+  
   return (
     <AuthProvider>
       <SearchProvider>
         <Router basename="/SCAN-Publications-Finder-React-API-page">
           <Routes>
-            <Route index element={<Layout><HomePage /></Layout>} /> {/* Используем index вместо path="" */}
+            <Route index element={<Layout><HomePage /></Layout>} />
             <Route path="search" element={<Layout><SearchPage /></Layout>} />
             <Route path="results" element={<Layout><ResultsPage /></Layout>} />
             <Route path="login" element={<SimpleLayout><LoginPage /></SimpleLayout>} />
